@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автошкола "AutoGuru" - Обучение на категории A, B, C</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style/css/style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img style="width: 32px; height: 32px;"
+                    src="https://png.pngtree.com/png-vector/20240607/ourmid/pngtree-golden-alphabet-letter-g-png-image_12649626.png"
+                    alt="" srcset="">
+                <span>AutoGuru</span>
+            </div>
+
+            <nav class="desktop-nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Главная</a></li>
+                    <li><a href="#services" class="nav-link">Категории</a></li>
+                    <li><a href="#info" class="nav-link">Преимущества</a></li>
+                    <li><a href="#enrollment" class="nav-link">Записаться</a></li>
+                    <li><a href="#contacts" class="nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="burger-menu" id="burgerMenu">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+
+            <!-- Мобильное меню -->
+            <div class="mobile-nav" id="mobileNav">
+                <div class="close-menu" id="closeMenu">
+                    <i class="fas fa-times"></i>
+                </div>
+                <ul class="mobile-nav-list">
+                    <li><a href="#home" class="mobile-nav-link">Главная</a></li>
+                    <li><a href="#services" class="mobile-nav-link">Категории</a></li>
+                    <li><a href="#info" class="mobile-nav-link">Преимущества</a></li>
+                    <li><a href="#enrollment" class="mobile-nav-link">Записаться</a></li>
+                    <li><a href="#contacts" class="mobile-nav-link">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- Карусель -->
+        <section class="carousel-section" id="home">
+            <div class="carousel">
+                <!-- Слайд для категории B -->
+                <div class="carousel-slide active" data-slide="0" style="background-image: url('/style/img/m52.webp');">
+                    <div class="carousel-caption">
+                        <h2>Категория B - Легковые автомобили</h2>
+                        <p>Научитесь уверенно управлять автомобилем с нашими опытными инструкторами</p>
+                        <a href="#enrollment" class="btn btn-accent">Записаться на обучение</a>
+                    </div>
+                </div>
+
+                <!-- Слайд для категории A -->
+                <div class="carousel-slide" data-slide="1" style="background-image: url('/style/img/мотик.jpg');">
+                    <div class="carousel-caption">
+                        <h2>Категория A - Мотоциклы</h2>
+                        <p>Почувствуйте свободу на двух колесах с нашими курсами для мотоциклистов</p>
+                        <a href="#enrollment" class="btn btn-accent">Записаться на обучение</a>
+                    </div>
+                </div>
+
+                <!-- Слайд для категории C -->
+                <div class="carousel-slide" data-slide="2" style="background-image: url('/style/img/урал.jpg');">
+                    <div class="carousel-caption">
+                        <h2>Категория C - Грузовики</h2>
+                        <p>Станьте профессиональным водителем грузового транспорта</p>
+                        <a href="#enrollment" class="btn btn-accent">Записаться на обучение</a>
+                    </div>
+                </div>
+
+                <!-- Слайд для акции/новости -->
+                <div class="carousel-slide" data-slide="3" style="background-image: url('/style/img/учебка.jpg');">
+                    <div class="carousel-caption">
+                        <h2>Скидка 15% при записи онлайн</h2>
+                        <p>Успейте записаться на любой курс до конца месяца и получите скидку 15%</p>
+                        <a href="#enrollment" class="btn btn-accent">Записаться со скидкой</a>
+                    </div>
+                </div>
+
+                <!-- Слайд о школе -->
+                <div class="carousel-slide" data-slide="4" style="background-image: url('/style/img/права.jpg');">
+                    <div class="carousel-caption">
+                        <h2>Автошкола "АвтоГуру"</h2>
+                        <p>Более 5000 выпускников успешно получили права с 2010 года</p>
+                        <a href="#services" class="btn btn-accent">Посмотреть категории</a>
+                    </div>
+                </div>
+
+                <div class="carousel-indicators">
+                    <div class="indicator active" data-slide="0"></div>
+                    <div class="indicator" data-slide="1"></div>
+                    <div class="indicator" data-slide="2"></div>
+                    <div class="indicator" data-slide="3"></div>
+                    <div class="indicator" data-slide="4"></div>
+                </div>
+
+                <!-- Кнопки навигации -->
+                <button class="carousel-btn carousel-prev" id="carouselPrev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn carousel-next" id="carouselNext">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        
+            <!-- Карточки услуг -->
+            <section class="services" id="services">
+
+                <div class="container" style="padding: 20px 0px;">
+                    <h2 class="section-title">Наши категории обучения</h2>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <img src="/style/img/m5_f90.webp" alt="Категория B - Легковые автомобили"
+                                class="card-image">
+                            <div class="card-content">
+                                <h3>Категория B</h3>
+                                <p>Полный курс обучения на легковом автомобиле. Подготовка к экзаменам в ГИБДД. Обучение
+                                    с
+                                    нуля и для имеющих опыт.</p>
+                                <span class="price">от 25 000 руб.</span>
+                                <a href="#enrollment" class="btn">Записаться</a>
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <img src="/style/img/мотик2.jpg" alt="Категория A - Мотоциклы" class="card-image">
+                            <div class="card-content">
+                                <h3>Категория A</h3>
+                                <p>Обучение управлению мотоциклом. Практические занятия на специально оборудованной
+                                    площадке. Теория и практика.</p>
+                                <span class="price">от 20 000 руб.</span>
+                                <a href="#enrollment" class="btn">Записаться</a>
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <img src="/style/img/камаз.jpg" alt="Категория C - Грузовики" class="card-image">
+                            <div class="card-content">
+                                <h3>Категория C</h3>
+                                <p>Профессиональная подготовка водителей грузовых автомобилей. Обучение на современных
+                                    грузовиках.</p>
+                                <span class="price">от 35 000 руб.</span>
+                                <a href="#enrollment" class="btn">Записаться</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Информационные блоки -->
+            <section class="info-blocks" id="info">
+                <div class="container" style="padding: 20px 0px;">
+                    <h2 style="color: white;" class="section-title">Почему выбирают нас</h2>
+                    <div class="info-blocks-container">
+                        <div class="info-block">
+                            <i class="fas fa-user-graduate"></i>
+                            <h3>Опытные инструкторы</h3>
+                            <p>Наши инструкторы имеют более 10 лет опыта вождения и преподавания</p>
+                        </div>
+
+                        <div class="info-block">
+                            <i class="fas fa-car-side"></i>
+                            <h3>Современный автопарк</h3>
+                            <p>Обучение на новых автомобилях с автоматической и механической коробкой передач</p>
+                        </div>
+
+                        <div class="info-block">
+                            <i class="fas fa-percentage"></i>
+                            <h3>Высокий процент сдачи</h3>
+                            <p>95% наших студентов сдают экзамен в ГИБДД с первого раза</p>
+                        </div>
+
+                        <div class="info-block">
+                            <i class="fas fa-clock"></i>
+                            <h3>Гибкий график</h3>
+                            <p>Вы можете выбрать удобное время для занятий: утро, день или вечер</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Форма записи -->
+            <section class="enrollment" id="enrollment">
+                <div class="container" style="padding: 20px 0px;">
+                    <h2 class="section-title">Записаться на обучение</h2>
+                    <div class="enrollment-form-container">
+                        <h3 class="form-title">Оставьте заявку и мы свяжемся с вами</h3>
+                        <form id="enrollmentForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="lastName">Фамилия</label>
+                                    <input type="text" id="lastName" class="form-control" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="firstName">Имя</label>
+                                    <input type="text" id="firstName" class="form-control" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="middleName">Отчество</label>
+                                    <input type="text" id="middleName" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Номер телефона</label>
+                                <input type="tel" id="phone" class="form-control" required
+                                    placeholder="+7 (XXX) XXX-XX-XX">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="category">Выберите категорию</label>
+                                <select id="category" class="form-control" required>
+                                    <option value="" disabled selected>Выберите категорию</option>
+                                    <option value="A">Категория A (Мотоциклы)</option>
+                                    <option value="B">Категория B (Легковые автомобили)</option>
+                                    <option value="C">Категория C (Грузовики)</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-accent form-btn">Отправить заявку</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="contacts">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Автошкола "АвтоГуру"</h3>
+                    <p>Мы обучаем водителей категорий A, B, C с 2010 года. Более 5000 выпускников успешно получили
+                        права.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+7 (999) 123-45-67</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-telegram"></i>
+                            <span>@avtoguru_school</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>+7 (999) 123-45-67</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@avtoguru.ru</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Адрес</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>г. Чебоксары, ул. Автошкольная, д. 15</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Пн-Пт: 9:00-20:00<br>Сб-Вс: 10:00-18:00</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-accent" id="askQuestionBtn">Задать вопрос</button>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2025 Автошкола "АвтоГуру". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <h3>Задать вопрос</h3>
+            <p>Оставьте ваш вопрос, и мы ответим вам в течение 15 минут в рабочее время.</p>
+            <form id="questionForm">
+                <div class="form-group">
+                    <label for="questionName">Ваше имя</label>
+                    <input type="text" id="questionName" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="questionPhone">Телефон для связи</label>
+                    <input type="tel" id="questionPhone" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="questionText">Ваш вопрос</label>
+                    <textarea id="questionText" class="form-control" rows="4" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-accent">Отправить вопрос</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/js/js_script.js"></script>
+    
+</body>
+
+</html>
