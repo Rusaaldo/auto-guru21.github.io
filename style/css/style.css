@@ -708,7 +708,7 @@ footer {
 
 @media (max-width: 576px) {
     .carousel {
-        height: 300px;
+        height: 380px;
     }
     
     .carousel-caption {
